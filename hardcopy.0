@@ -1,0 +1,36 @@
+" Press ? for help             |  1 require 'rails_helper'
+                               |  2
+.. (up a dir)                  |  3 RSpec.describe LinesController, type: :controller do
+</ruby/metro-exit-view/        |  4   describe 'GET /lines/' do
+¸ .bundle/                     |  5     it 'some lines should be got' do
+¸ .git/                        |  6       get 'index'
+¸ app/                         |  7       line_mock = mock_model(Line)
+¸ bin/                         |  8       Line.stub(:all).and_return(array_mock)
+¸ config/                      |  9       allow(array_mock).to receive(:count).and_return(3)
+¸ db/                          | 10       expect(assigns[:lines].count).to eq 3
+¸ lib/                         | 11       expect(response.status).to eq 200
+¸ log/                         | 12     end
+¸ public/                      | 13   end
+¾ spec/                        | 14 end
+  ¾ controllers/               |~
+      exits_controller_spec.rb |~
+      lines_controller_spec.rb |~
+  ¾ factories/                 |~
+      exits.rb                 |~
+      lines.rb                 |~
+      stations.rb              |~
+  ¸ helpers/                   |~
+  ¸ models/                    |~
+  ¸ requests/                  |~
+  ¸ routing/                   |~
+  ¸ views/                     |~
+    rails_helper.rb            |~
+    spec_helper.rb             |~
+¸ tmp/                         |~
+¸ vendor/                      |~
+  .gitignore                   |~
+  .rspec                       |~
+  config.ru                    |~
+  Gemfile                      |~
+<c/Sources/ruby/metro-exit-view spec/controllers/lines_controller_spec.rb [+]
+

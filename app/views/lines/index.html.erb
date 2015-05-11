@@ -1,0 +1,13 @@
+<%- model_class = Line -%>
+<div class="text-center">
+  <h1>路線</h1>
+<table class="table table-striped span5 center-table">
+  <tbody>
+    <% @lines.each do |line| %>
+      <tr>
+        <td><%= link_to line.name, line_stations_path(line.id) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>

@@ -1,0 +1,17 @@
+<%- model_class = Station -%>
+<div class="text-center">
+<h1>駅名</h1>
+
+<%= render :partial => "common/errorIfNotFound", 
+  :locals => { :list => @stations, :name => '日比谷線' } %>
+
+<table class="table table-striped span5 center-table">
+  <tbody>
+    <% @stations.each do |station| %>
+      <tr>
+        <td><%= link_to station.name, line_station_exits_path(station.line_id,station.station_id) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>

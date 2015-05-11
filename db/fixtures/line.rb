@@ -1,0 +1,11 @@
+Line.seed(:line_id,
+  { line_id: 'TokyoMetro.Ginza', name: '銀座線' },
+  { line_id: 'TokyoMetro.Marunouchi', name: '丸ノ内線' },
+  { line_id: 'TokyoMetro.Hibiya', name: '日比谷線' },
+  { line_id: 'TokyoMetro.Tozai', name: '東西線' },
+  { line_id: 'TokyoMetro.Chiyoda', name: '千代田線' },
+  { line_id: 'TokyoMetro.Yurakucho', name: '有楽町線' },
+  { line_id: 'TokyoMetro.Hanzomon', name: '半蔵門線' },
+  { line_id: 'TokyoMetro.Namboku', name: '南北線' },
+  { line_id: 'TokyoMetro.Fukutoshin', name: '副都心線' },
+)

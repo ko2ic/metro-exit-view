@@ -1,0 +1,10 @@
+    <div id="map-canvas" class="map-canvas"></div>
+    <div id="pano" class="map-canvas"></div>
+    <div id="exit-data" data-lat-id="<%= @exit.lat %>" data-lon-id="<%= @exit.lon %>" data-heading-id="<%=@exit.heading  %>" ></div>
+<% content_for(:page_javascript) do %>
+    <%= javascript_include_tag "http://maps.googleapis.com/maps/api/js?v=3.exp" %>
+    <%= javascript_include_tag "exits" %>
+<% end %>
+<% content_for(:page_stylesheet) do %>
+    <%= stylesheet_link_tag "exits", :media => "all" %>
+<% end %>
